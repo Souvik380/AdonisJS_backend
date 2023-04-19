@@ -4,7 +4,7 @@ import UserProfileValidator from "App/Validators/UserProfileValidator"
 
 export default class ProfileController {
 
-    public async view(){
+    public async view({view}){
         const profiles=await Profile.all()
         return profiles
     }
